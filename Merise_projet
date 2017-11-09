@@ -1,0 +1,19 @@
+Merise :
+
+Vous créez un site d'échanges Udev où chaque étudiant est un utilisateur.
+L'utilisateur doit pouvoir s'enregistrer à partir d'un mail d'invitation.
+L'inscription se fait au travers d'un formulaire.
+Les données sont regroupées et permettent une sélection selon les affinitées.
+(affinitées pré-remplies dans le formulaire ; 
+2 cas possibles avec l'aspect perso mis en avant OU/ET le pro)
+L'utilisateur ne peut regarder que les profils proposés par l'algorithme. 
+
+Table utilisateur(id, nom, prenom, adresse mail,id_campus,id_ville,age,id_genre,id_civilité)
+Campus(id_campus,libellé)
+Ville(id_ville,libellé)
+Civilité(id_civilité,libellé)
+Choix_comp(id_comp,libellé)
+Choix_centres(id_centre,libellé)
+
+Associations entre table utilisateur et choix comp
+Associations entre table utilisateur et choix centre intérêts

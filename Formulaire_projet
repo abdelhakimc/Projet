@@ -1,0 +1,14 @@
+Formulaire : 
+
+- Nom (pré-remplis) [obligatoire]
+- Prénom (pré-remplis) [obligatoire]
+- Adresse-mail (pré-remplis) [obligatoire]
+- Ville campus (liste parmis 6) [obligatoire]
+
+- Ville origine
+- Age 
+- Genre
+- Civilité (célibataire/union)
+- Choix (pro ou perso) [obligatoire]
+  - Compétences informatiques (Liste)
+  - Centres d'intérêts (Liste ; externe à Udev)
