@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS Projet;
-CREATE DATABASE Projet;
+-- DROP DATABASE IF EXISTS Projet;
+-- CREATE DATABASE Projet;
 
-USE Projet;
+-- USE Projet;
 
 
 CREATE TABLE campus (
@@ -31,13 +31,14 @@ PRIMARY KEY (Id_message)
 );
 
 CREATE TABLE Utilisateur (
-Id_utilisateur VARCHAR(20) UNSIGNED NOT NULL AUTO_INCREMENT, 
+Id_utilisateur VARCHAR(20) NOT NULL, 
 Nom VARCHAR(64) NOT NULL,
 Prenom VARCHAR(64) NOT NULL,
 Adresse_mail VARCHAR(256) NOT NULL,  
-Date_inscription DATE NOT NULL,
+Date_inscription DATETIME NOT NULL,
 Ville_origine VARCHAR(256) NOT NULL, 
 Choix_interets VARCHAR(10) NOT NULL, 
+Mdp VARCHAR(64) NOT NULL,
 Id_campus smallint(6) UNSIGNED NOT NULL,
 Id_genre smallint(6) UNSIGNED NOT NULL,
 Id_civilite smallint(6) UNSIGNED NOT NULL,
@@ -48,7 +49,7 @@ FOREIGN KEY (Id_civilite) REFERENCES civilite(Id_civilite)
 );
 
 CREATE TABLE User_txt (
-Id_utilisateur VARCHAR(20) UNSIGNED NOT NULL AUTO_INCREMENT, 
+Id_utilisateur VARCHAR(20) NOT NULL, 
 Id_message smallint(6) UNSIGNED NOT NULL AUTO_INCREMENT, 
 CONSTRAINT PK_User_txt PRIMARY KEY (Id_utilisateur,Id_message),
 FOREIGN KEY (Id_utilisateur) REFERENCES Utilisateur(Id_utilisateur),
@@ -103,8 +104,12 @@ INSERT INTO interets VALUES
 (8,"Auto/Moto"),
 (9,"Politique");
 
-INSERT INTO Utilisateur VALUES
-()
+INSERT INTO Utilisateur VALUES 
+('AA111111111','Pege','Pierre','ppeg123098@gmail.com','2017-11-16 00:00:00','Clermont-Ferrand','111111','azertyuiop','1','0','0');
 
+SELECT Id_utilisateur FROM 
+(SELECT Id_utilisateur FROM Utilisateur ORDER BY Date_inscription DESC LIMIT 30)
+ORDER BY Id_utilisateur ASC;
 
+SELECT Id_utilisateur FROM Utilisateur ORDER BY Id_utilisateur ASC LIMIT 30,4000;
 
