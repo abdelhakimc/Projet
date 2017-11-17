@@ -2,7 +2,14 @@
 -- CREATE DATABASE Projet;
 
 -- USE Projet;
-
+DROP TABLE interets;
+DROP TABLE User_txt;
+DROP TABLE Utilisateur;
+DROP TABLE message;
+DROP TABLE competences;
+DROP TABLE civilite;
+DROP TABLE genre;
+DROP TABLE campus;
 
 CREATE TABLE campus (
 Id_campus smallint(6) UNSIGNED NOT NULL AUTO_INCREMENT, 
@@ -23,11 +30,19 @@ Libellé VARCHAR(30) NOT NULL,
 PRIMARY KEY (Id_civilite)
 );
 
+CREATE TABLE competences (
+Id_competences smallint(6) UNSIGNED NOT NULL, 
+Libellé VARCHAR(30) NOT NULL,
+PRIMARY KEY (Id_competences)
+);
+
 CREATE TABLE message (
 Id_message smallint(6) UNSIGNED NOT NULL AUTO_INCREMENT, 
 Titre VARCHAR(64) NOT NULL,
 Description VARCHAR(255) NOT NULL,
-PRIMARY KEY (Id_message)
+Id_competences smallint(6) UNSIGNED NOT NULL,
+PRIMARY KEY (Id_message),
+FOREIGN KEY (Id_competences) REFERENCES competences(Id_competences)
 );
 
 CREATE TABLE Utilisateur (
@@ -55,12 +70,6 @@ CONSTRAINT PK_User_txt PRIMARY KEY (Id_utilisateur,Id_message),
 FOREIGN KEY (Id_utilisateur) REFERENCES Utilisateur(Id_utilisateur),
 FOREIGN KEY (Id_message) REFERENCES message(Id_message)
 
-);
-
-CREATE TABLE competences (
-Id_competences smallint(6) UNSIGNED NOT NULL AUTO_INCREMENT, 
-Libellé VARCHAR(30) NOT NULL,
-PRIMARY KEY (Id_competences)
 );
 
 CREATE TABLE interets (
@@ -104,8 +113,14 @@ INSERT INTO interets VALUES
 (8,"Auto/Moto"),
 (9,"Politique");
 
+INSERT INTO message VALUES
+(1,"Le premier message","La description du premier message",1);
+
 INSERT INTO Utilisateur VALUES 
 ('AA111111111','Pege','Pierre','ppeg123098@gmail.com','2017-11-16 00:00:00','Clermont-Ferrand','111111','azertyuiop','1','0','0');
+
+INSERT INTO User_txt VALUES
+('AA111111111',1);
 
 SELECT Id_utilisateur FROM 
 (SELECT Id_utilisateur FROM Utilisateur ORDER BY Date_inscription DESC LIMIT 30)
