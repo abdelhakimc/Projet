@@ -1,0 +1,69 @@
+
+#diveee {
+	width:890px;
+    height:290px;
+    margin-left :358px;
+    border : solid;
+    background-color:rgb(179, 15, 15);
+    position: absolute;
+    float : top;
+    } 
+    
+#divee {
+	width:890px;
+    height:290px;
+    margin-left :358px;
+    margin-top : 303px;
+    background-color:rgb(255, 94, 0);
+    position: absolute;
+    float : bottom;
+    border : solid;
+   
+	}
+
+    button{
+        border-radius:20px;
+    }
+
+    
+menu {
+	float:left;
+	width:315px;
+	height:593px;
+    background-color:rgb(161, 89, 89);
+    position: absolute;
+    border : solid;
+    margin-top:0px;
+}
+info{
+    margin-top:20px;
+    position : absolute;
+
+}
+h1{
+    font-size: 19px;
+    padding:10px;
+    
+}
+p{
+    margin-top:160px;
+   
+
+}
+
+img{
+    position:absolute;
+    margin-top:30px;
+    margin-left:200px;
+    height: 80px;
+    width: 70px;
+}
+
+textarea{
+    margin-top:5px;
+    background-color: rgb(252, 189, 189);
+}
+    
+body{
+    background-color: rgb(165, 6, 6)
+}

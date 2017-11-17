@@ -1,0 +1,68 @@
+Projet fil rouge !!
+Réseaux social U'DEV:
+
+
+Différentes bases de données:
+
+- Base données générale (ID, MP, Nom, Prénom, Adresse, Age, Loisirs, Compétences lié au cours)
+
+
+Algo de l'inscription:
+
+DECLARATION
+
+Base de donnée générale;
+var compteur <-- TABLEAU VIDE;
+var interet <-- TABLEAU VIDE;
+var user <-- TABLEAU VIDE;
+var loisir <-- SELECTION dans la base de donnée générale l'ID loisir des personnes;
+
+
+DEBUT
+
+//Fonction de création d'un grand tableau contenant toutes les IDs des personnes de la base de donnée
+FONCTION Tableau (loisir)
+DEBUT FONCTION
+
+POUR i allant de 0 à la fin de la chaine de caractère de loisir
+interet [i] <-- élément i de la chaine de caractère;
+i++;
+FIN POUR
+
+user <-- interet;  	//on met le tableau que l'on vient de créer dans un grand tableau
+
+AFFICHER user;
+FIN FONCTION
+
+//Fonction qui permet de créer un tableau avec dedans le nombre de loisirs identiques avec la personne connectée et les autres personne //présente dans la base de donnée
+FONCTION Traitement ()
+DEBUT FONCTION
+
+POUR i allant 1 à la taille du tableau user
+POUR j allant de 0 à la taille du tableau interet
+SI (user[0][j] + user[i][j] = 2)
+ALORS compteur[i] = compteur[i] + 1;
+j++;
+FIN SI
+ELSE
+ALORS j++;
+FIN ELSE
+FIN POUR
+FIN POUR
+AFFICHER compteur;
+FIN FONCTION
+
+
+//Fonction qui permet de comparer dans le tableau de résultat les éléments pour savoir si on a 3 loisirs ou plus avec les autres //personnes pour les propositions par la suite.
+FONCTION Resultat ()
+DEBUT FONCTION
+POUR i allant de 0 à la taille du tableau compteur
+SI (compteur[i] >= 3)
+ALORS AFFICHER "Tu as " + compteur[i] + "Loisir en commun";
+i++;
+FIN SI
+FIN POUR
+FIN FONCTION
+
+
+FIN

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="apple-touch-icon" href="favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<title>Document</title>
+	<style>body{margin:0;font-family: 'Raleway',Comic Sans MS;}</style>
+</head>
+<body>
+	<form action="verif.php" method="post">
+		<label for="nom">nom</label>
+		<input type="text" name="nom">
+		<br>
+		<label for="prenom">prenom</label>
+		<input type="text" name="prenom">
+		<br>
+		<label for="adresse_mail">adresse_mail</label>
+		<input type="text" name="adresse_mail">
+		<br>
+		<label for="campus">campus</label>
+		<select name="campus" id="">
+			<option value="Clermont-Ferrand">c1</option>
+			<option value="Paris">c2</option>
+			<option value="Bordeaux">c3</option>
+			<option value="Lyon">c4</option>
+			<option value="Toulouse">c5</option>
+			<option value="Lille">c6</option>
+		</select>
+		<br>
+		<label for="ville">ville</label>
+		<input type="text" name="ville">
+		<br>
+		<label for="age">age</label>
+		<input type="number" name="age">
+		<br>
+		<label for="genre">genre</label>
+		<select name="genre" id="">
+			<option value="Homme">c1</option>
+			<option value="Femme">c2</option>
+		</select>
+		<br>
+		<label for="civilite">civilite</label>
+		<select name="civilite" id="">
+			<option value="Célibataire">c1</option>
+			<option value="En union">c2</option>
+		</select>
+		<br>
+			<h2>comp</h2>
+			<input type="checkbox" name="c1" value="0">
+			<input type="checkbox" name="c2" value="0">
+			<input type="checkbox" name="c3" value="0">
+			<input type="checkbox" name="c4" value="0">
+			<input type="checkbox" name="c5" value="0">
+			<input type="checkbox" name="c6" value="0">
+
+		<br>
+			<h2>int</h2>
+			
+			<input type="checkbox" name="i1" value="0">
+			<input type="checkbox" name="i2" value="0">
+			<input type="checkbox" name="i3" value="0">
+			<input type="checkbox" name="i4" value="0">
+			<input type="checkbox" name="i5" value="0">
+			<input type="checkbox" name="i6" value="0">
+			<input type="checkbox" name="i7" value="0" >
+			<input type="checkbox" name="i8" value="0">
+			<input type="checkbox" name="i9" value="0">
+		<br>
+		<input type="submit" value="Valider" name="Valider">
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+.container {
+    background-image:linear-gradient(rgb(71, 9, 9), rgb(255, 255, 255));
+    position: relative;
+  }
+
+  nav {
+   
+    border-color : rgb(131, 18, 18);
+    border-width: 3px;
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    height :480px;
+  }
+
+  #menu {
+    font-family: 'Times New Roman';
+    padding:15px;
+    padding-top:150px;
+    list-style:none;
+    text-align: center;
+    width: 180px;
+  }
+  #menu ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align: center;
+  }
+  #menu li {
+     background-color:rgb(151, 46, 46); 
+     background-image:-webkit-linear-gradient(top, rgb(151, 46, 46) 0%, #333A40 100%);
+     background-image: linear-gradient(to bottom, rgb(151, 46, 46) 0%, #333A40 100%);
+     border-radius: 6px;
+     margin-bottom:2px;
+     box-shadow: 3px 3px 3px rgb(151, 46, 46);
+     border:solid 1px rgb(151, 46, 46)
+  }
+  #menu li li {
+     max-height:0;
+     overflow: hidden;
+     transition: all .5s;
+     border-radius:0;
+     background: rgb(117, 76, 76);
+     box-shadow: none;
+     border:none;
+     margin:0
+  }
+  #menu a {
+    display:block;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 0;
+    font-family: verdana;
+    font-size:1.2em
+  }
+  #menu ul li a, #menu li:hover li a {
+    font-size:1em
+  }
+  #menu li:hover {
+     background: rgb(151, 46, 46)
+  }
+  #menu li li:hover {
+     background: rgb(168, 105, 105);
+  }
+  #menu ul li:last-child {
+     border-radius: 0 0 6px 6px;
+     border:none;
+  }
+  #menu li:hover li {
+    max-height: 15em;
+  }
+
+  section {
+    margin-left: 200px;
+    height :480px;
+  }
+
+  h1 {
+    font-size: 24pt;
+    color : rgb(236, 195, 195);
+    text-shadow: 0 0 12px rgba(0,0,0, 0.5);
+  }
+  .button{
+    position: absolute;
+    padding : 3px; 
+    width: 90px;
+    height: 20px; 
+    margin-left:390px;
+    margin-top:340px;
+    -moz-box-shadow: 0px 0px 12px 4px #c21b1b;
+    -webkit-box-shadow: 0px 0px 12px 4px #c21b1b;
+    box-shadow: 0px 0px 12px 4px #c21b1b;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c74545), color-stop(1, #f2faed));
+    background:-moz-linear-gradient(top, #c74545 5%, #f2faed 100%);
+    background:-webkit-linear-gradient(top, #c74545 5%, #f2faed 100%);
+    background:-o-linear-gradient(top, #c74545 5%, #f2faed 100%);
+    background:-ms-linear-gradient(top, #c74545 5%, #f2faed 100%);
+    background:linear-gradient(to bottom, #c74545 5%, #f2faed 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c74545', endColorstr='#f2faed',GradientType=0);
+    background-color:#c74545;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #ffffff;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Georgia;
+    font-size:18px;
+    padding:18px 76px;
+    text-decoration:none;
+    text-shadow:3px -1px 5px #1a1a1a;
+  }
+  .button:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2faed), color-stop(1, #c74545));
+    background:-moz-linear-gradient(top, #f2faed 5%, #c74545 100%);
+    background:-webkit-linear-gradient(top, #f2faed 5%, #c74545 100%);
+    background:-o-linear-gradient(top, #f2faed 5%, #c74545 100%);
+    background:-ms-linear-gradient(top, #f2faed 5%, #c74545 100%);
+    background:linear-gradient(to bottom, #f2faed 5%, #c74545 100%);
+    background-color:#f2faed;
+  }
+  .button:active {
+    position:relative;
+    top:1px;
+  }
+
+  #img {
+    position: absolute;
+    margin-left : 12px;
+    border-radius: 25px 25px 30px 25px;
+    padding: 3px; 
+    width: 1025px;
+    height: 300px; 
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background-image:linear-gradient(rgb(255, 168, 168),rgb(255, 117, 117));
+    width: 100%;
+  }
+
+  body {
+
+    margin-bottom: 120px;
+    background-image:linear-gradient(rgb(71, 9, 9), rgb(136, 40, 40), rgb(255, 209, 209));
+  }
+
+
+/* changement couleur taille page*/
+@media (min-width: 1px) and (max-width: 767Px) {
+    
+    body {
+        background-color: rgb(245, 124, 124);
+        display: block !important;}
+      }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-color: rgb(228, 82, 82);
+        display: block !important;}
+    }
+
+@media (min-width: 992px) and (max-width: 1480px) {
+    body {
+        background-color: rgba(150, 7, 7, 0.73);
+        display: block !important;
+      }
+    }
+
+
+    
+   
+    

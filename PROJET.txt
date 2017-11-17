@@ -1,0 +1,118 @@
+CREATION PROJET SITE DE MISE EN RELATION/CARNET D ADRESSE
+
+
+
+Site qui met en relation les contacts UDEV France
+
+Buts :
+
+-rencontre personnelle pour sortie/fetes/resto
+-rencontre pro pour echanger et apprendre plus
+
+
+*******************************************************CAHIER DES CHARGES****************************************************
+
+
+MATERIELS :
+
+-AJAX
+-RESPONSIVE DESIGN
+-CSS
+-JAVASCRIPT
+-HTML
+-INTERNET
+-SQL
+
+PERSONNELS :
+
+CHAWKI ABDELHAKIM (forces : css,html)
+JERRAR MALIKA (forces : html,responsive)
+GAEL BORDE (forces : html,css,js,responsive) 
+THIBAULT DUMAS (forces : sql)
+PIERRE PEGEON ( forces : logique,jquery)
+FRANCK CLERGUE( forces : html,css,js)
+
+
+
+ROLES :
+
+CHEF DE PROJET (CHFP) : MALIKA JERRAR
+CHEF DE PROJET ADJOINT : THIBAULT DUMAS
+
+SECRETAIRE : CHAWKI ABDELHAKIM
+
+ANALYSTE : GROUPE COMPLET DERNIERE DECISION CHFP
+
+DEVELOPPEUR : GROUPE COMPLET DERNIERE DECISION CHFP
+
+RESPONSABLE MARKET. :
+
+
+
+***************************************************************IDEES*****************************************************************
+
+
+TYPE SKYPE
+MAIL D INSCRIPTION RESTE EN INTERNE POUR EVITER LES SPAMS
+RECUPERER LES MAILS DANS LA BASE DE DONNEES IPI
+SITE PERMET DE LIER LES PASSIONS DE CHACUN ET LEUR PROPOSER UNE RENCONTRE
+
+
+
+
+
+
+*************************************************************MISE EN FORME************************************************************
+
+
+
+PAGE PRESENTATION
+
+PAGE LOGIN
+
+PAGE PRINCIPAL
+
+sous forme de menu
+
+-->  messagerie
+-->  onglet pro
+-->  onglet perso
+-->  contacts/suggestions
+
+
+sur la page
+
+
+&&>  choix automatique
+
+//&&>  choix critères de sélection (exemple : sexe /age /metier /...etc.)
+//&&>  choix critères de localisation
+
+
+
+
+**************************************************************ETAPES*************************************************************
+
+
+1° CREER UN TABLEAU MERISE + DES ALGORITHMES DU SITE(ALGO PROPOSITION)       -02/11/2017-
+	
+	grp 1: malika,pierre,thibault		grp 2: abdelhakim,franck,gael
+
+2° MISE EN PLACE DU SITE ET DES BASES DE DONNEES
+
+
+	grp 1 : malika, hakim          grp 2: franck, gael 		grp 3: thibault, pierre
+
+3° 
+
+
+
+
+ 
+
+
+
+
+
+
+
