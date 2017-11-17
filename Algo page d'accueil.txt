@@ -11,100 +11,58 @@ Algo de l'inscription:
 
 DECLARATION
 
-var IDloisir <-- TABLEAUX VIDE;
-var Menu <-- TABLEAU comportant tout les choix de Loisirs;
+Base de donnée générale;
+var compteur <-- TABLEAU VIDE;
+var interet <-- TABLEAU VIDE;
+var user <-- TABLEAU VIDE;
+var loisir <-- SELECTION dans la base de donnée générale l'ID loisir des personnes;
+
 
 DEBUT
 
-Ouvrir le Menu
-	TANT QUE tous les choix n'ont pas était fait
-		POUR i allant de 0 à longueur du tableau
-			SI Menu[i] VRAI
-			ALORS IDloisir[i] <-- 1;
-			FIN SI
-			SI Menu[i] FAUX
-			ALORS IDloisir[i] <-- 0;
+//Fonction de création d'un grand tableau contenant toutes les IDs des personnes de la base de donnée 
+FONCTION Tableau (loisir) 
+	DEBUT FONCTION
+   
+		POUR i allant de 0 à la fin de la chaine de caractère de loisir
+			interet [i] <-- élément i de la chaine de caractère;
+			i++;
+		FIN POUR
+	
+	user <-- interet;  	//on met le tableau que l'on vient de créer dans un grand tableau
+	
+   	AFFICHER user;
+	FIN FONCTION
+   
+//Fonction qui permet de créer un tableau avec dedans le nombre de loisirs identiques avec la personne connectée et les autres personne //présente dans la base de donnée
+FONCTION Traitement ()
+ 	DEBUT FONCTION
+	
+		POUR i allant 1 à la taille du tableau user
+			POUR j allant de 0 à la taille du tableau interet
+				SI (user[0][j] + user[i][j] = 2) 
+					ALORS compteur[i] = compteur[i] + 1;
+					j++;
+				FIN SI
+				ELSE
+					ALORS j++;
+				FIN ELSE
+			FIN POUR
+		FIN POUR
+	AFFICHER compteur;
+	FIN FONCTION
+
+
+//Fonction qui permet de comparer dans le tableau de résultat les éléments pour savoir si on a 3 loisirs ou plus avec les autres //personnes pour les propositions par la suite.
+FONCTION Resultat () 
+	DEBUT FONCTION
+		POUR i allant de 0 à la taille du tableau compteur
+			SI (compteur[i] >= 3)
+				ALORS AFFICHER "Tu as " + compteur[i] + "Loisir en commun";
+				i++;
 			FIN SI
 		FIN POUR
-	FIN TANT QUE
-AFFICHER IDloisr
+	FIN FONCTION
 
-FIN
-
-
-DECLARATION
-
-var IDcompetence <-- TABLEAUX VIDE;
-var Menu <-- TABLEAU comportant tout les choix de Loisirs;
-
-DEBUT
-
-Ouvrir le Menu
-	TANT QUE tous les choix n'ont pas était fait
-		POUR i allant de 0 à longueur du tableau
-			SI Menu[i] VRAI
-			ALORS IDcompetence[i] <-- 1;
-			FIN SI
-			SI Menu[i] FAUX
-			ALORS IDcompetence[i] <-- 0;
-			FIN SI
-		FIN POUR
-	FIN TANT QUE
-AFFICHER IDcompetence
-
-FIN
-
-
-Algo de la page d'accueil avec les proposition:
-
-
-DECLARATION
-
-var IDloisir <-- TABLEAU remplit dans le programme ci-dessus;
-var IDcompetence <-- TABLEAU remplit dans le programme ci-dessus;
-Var IDperso <-- BEGINT;
-var compteurL <-- NUMERIC VALUES 0;
-var compteurC <-- NUMERIC VALUES 0;
-var k <-- NUMERIC VALUES longueur du tableau IDloisir;
-var l <-- NUMERIC VALUES longueur du tableau IDcompetence;
-var Données <-- TABLEAUX VIDE;
-Base de données générale;
-
-
-DEBUT
-
-Se connecter à son compte
-	Ouvrir Base de données générale entrée lecture
-		Lire Base de données générale;
-
-		TANT QUE EOF colonne IDloisir.utilisateurs FAUX
-
-			POUR i allant de 0 à k
-				SI 		(IDloisir[i] == 1) et (IDloisir.utilisateurs[i] == 1)
-				ALORS 	compteurL <-- compteurL + 1
-				FIN SI
-			FIN POUR
-
-			SI 		compteurL >= 3
-			ALORS	AFFICHER "Tu as " + compteurL + " loisirs en commun avec " + nom
-			FIN SI
-		FIN TANT QUE
-
-
-		TANT QUE EOF colonne IDcompetence.utilisateurs FAUX
-			POUR i allant de 0 à l
-				SI 		(IDcompetence[i] == 1) et (IDcompetence.utilisateurs[i] == 1)
-				ALORS 	compteurC <-- compteurC + 1
-				FIN SI
-			FIN POUR
-
-			SI 		compteurC >= 3
-			ALORS	AFFICHER "Tu as " + compteurL + " compétences en commun avec " + nom
-			FIN SI
-		FIN TANT QUE
-
-	Fermer base de données générale
-
-
-
+ 	
 FIN
