@@ -1,0 +1,110 @@
+								Projet fil rouge !!
+Réseaux social U'DEV:
+
+
+Différentes bases de données:
+
+- Base données générale (ID, MP, Nom, Prénom, Adresse, Age, Loisirs, Compétences lié au cours)
+
+
+Algo de l'inscription:
+
+DECLARATION
+
+var IDloisir <-- TABLEAUX VIDE;
+var Menu <-- TABLEAU comportant tout les choix de Loisirs;
+
+DEBUT
+
+Ouvrir le Menu
+	TANT QUE tous les choix n'ont pas était fait
+		POUR i allant de 0 à longueur du tableau
+			SI Menu[i] VRAI
+			ALORS IDloisir[i] <-- 1;
+			FIN SI
+			SI Menu[i] FAUX
+			ALORS IDloisir[i] <-- 0;
+			FIN SI
+		FIN POUR
+	FIN TANT QUE
+AFFICHER IDloisr
+
+FIN
+
+
+DECLARATION
+
+var IDcompetence <-- TABLEAUX VIDE;
+var Menu <-- TABLEAU comportant tout les choix de Loisirs;
+
+DEBUT
+
+Ouvrir le Menu
+	TANT QUE tous les choix n'ont pas était fait
+		POUR i allant de 0 à longueur du tableau
+			SI Menu[i] VRAI
+			ALORS IDcompetence[i] <-- 1;
+			FIN SI
+			SI Menu[i] FAUX
+			ALORS IDcompetence[i] <-- 0;
+			FIN SI
+		FIN POUR
+	FIN TANT QUE
+AFFICHER IDcompetence
+
+FIN
+
+
+Algo de la page d'accueil avec les proposition:
+
+
+DECLARATION
+
+var IDloisir <-- TABLEAU remplit dans le programme ci-dessus;
+var IDcompetence <-- TABLEAU remplit dans le programme ci-dessus;
+Var IDperso <-- BEGINT;
+var compteurL <-- NUMERIC VALUES 0;
+var compteurC <-- NUMERIC VALUES 0;
+var k <-- NUMERIC VALUES longueur du tableau IDloisir;
+var l <-- NUMERIC VALUES longueur du tableau IDcompetence;
+var Données <-- TABLEAUX VIDE;
+Base de données générale;
+
+
+DEBUT
+
+Se connecter à son compte
+	Ouvrir Base de données générale entrée lecture
+		Lire Base de données générale;
+
+		TANT QUE EOF colonne IDloisir.utilisateurs FAUX
+
+			POUR i allant de 0 à k
+				SI 		(IDloisir[i] == 1) et (IDloisir.utilisateurs[i] == 1)
+				ALORS 	compteurL <-- compteurL + 1
+				FIN SI
+			FIN POUR
+
+			SI 		compteurL >= 3
+			ALORS	AFFICHER "Tu as " + compteurL + " loisirs en commun avec " + nom
+			FIN SI
+		FIN TANT QUE
+
+
+		TANT QUE EOF colonne IDcompetence.utilisateurs FAUX
+			POUR i allant de 0 à l
+				SI 		(IDcompetence[i] == 1) et (IDcompetence.utilisateurs[i] == 1)
+				ALORS 	compteurC <-- compteurC + 1
+				FIN SI
+			FIN POUR
+
+			SI 		compteurC >= 3
+			ALORS	AFFICHER "Tu as " + compteurL + " compétences en commun avec " + nom
+			FIN SI
+		FIN TANT QUE
+
+	Fermer base de données générale
+
+
+
+FIN
