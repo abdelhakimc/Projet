@@ -1,0 +1,50 @@
+.btn{
+  color: black;
+  font-weight: bold;
+  border-color: rgb(96, 143, 69);
+  background-color: LightGreen;
+}
+
+
+.btn2{
+  color: black;
+  font-weight: bold;
+  border-color: rgb(96, 143, 69);
+  background-color: red;
+}
+
+
+.box{
+
+width: 400px;
+height: 200px;
+
+
+}
+
+.panel-default{
+  border-radius: 5px;
+  background-color: #FFF8DC;
+}
+
+.panel-default>.panel-heading{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: MidnightBlue;
+}
+
+.panel-title{
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+p{
+	text-align: center;
+}
+
+#area{
+
+/*	margin-left: 15px;
+*/
+}
