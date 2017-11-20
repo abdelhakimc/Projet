@@ -1,0 +1,46 @@
+body {
+	background-color : rgb(133, 52, 52);
+    font-family: 'Raleway',Comic Sans MS;
+		}
+
+.boxConnexion {
+	border-style : solid;
+	background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*css pour la page d'accueil*/
+.imagecgi {
+  border-radius: 20px;
+}
+
+.inputaccueil {
+  border-radius:5px;
+  margin-bottom: 10px;
+}
+
+.connexion {
+    margin-bottom: 10px;
+  }
+
+/*css pour la page d'inscription*/
+.inputinscription {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.inscription {
+  color:white;
+}
+
+.divinscription {
+  text-align: left;
+}
+
+.divrow {
+  padding-left: 200px;
+}
