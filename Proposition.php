@@ -36,7 +36,7 @@ function Resultat()
   global $compteur;
 	for ($i=1; $i <= count($compteur); $i++) {
 		if ($compteur[$i] >= 3) {
-	     echo 'tu as '.$compteur[$i].' donneess en commun.';
+	     		echo 'tu as '.$compteur[$i].' donnees en commun.';
 		}
 	}
 }
