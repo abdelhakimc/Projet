@@ -1,7 +1,7 @@
 <?php
 try
 {
-        // Nouvelle connexion bdd avec adresse du serveur, l'identifiant et le mot de passe
+// Nouvelle connexion bdd avec adresse du serveur, l'identifiant et le mot de passe
   $bdd = new PDO("\x6d\171\163\x71\154\x3a\150\157\x73\164\75\155\171\163\161\154\x35\65\x2d\x32\x34\x34\x2e\160\x65\x72\163\x6f\x3b\x64\142\156\141\x6d\x65\75\x67\162\157\x77\x75\x70\164\x6f\161\x69\141\x64\155\x69\156\141\x3b\x63\150\x61\x72\x73\x65\164\x3d\165\x74\x66\70", "\147\x72\x6f\x77\165\160\164\157\x71\151\x61\x64\155\151\x6e\141", "\101\144\x6d\151\156\x61\x36\63");
 }
 catch(Exception $e)
@@ -66,7 +66,6 @@ catch(Exception $e)
           <label class="inscription">Civilité : <select name="civilite" id="civilite" class="inputinscription"><option value="Célibataire">Célibataire</option><option value="En union">Autres</option></select></label><br>
         </div>
       </div>
-
       <div class="row text-center">
 
         <!-- formulaire de compétence à sélectionner -->
@@ -102,19 +101,12 @@ catch(Exception $e)
             </div>';
           }
           ?>
-
         </div>
-
-
       </div>
-
-    </div>
-  </div>
-  <div class="row text-center">
-    <label class="inscription" id="mdp1">Mot de passe : <input class="inputinscription" type="password" name="mdp1" ></label><br>
-    <label class="inscription" id="mdp2">Confirmer : <input class="inputinscription" type="password" name="mdp2" ></label>
-    <div>
-
+      <div class="row text-center">
+        <label class="inscription" id="mdp1">Mot de passe : <input class="inputinscription" type="password" name="mdp1" ></label><br>
+        <label class="inscription" id="mdp2">Confirmer : <input class="inputinscription" type="password" name="mdp2" ></label>
+      </div>
       <div class="row text-center" id="bas_inscription">
 
         <!-- Condition d'utilisation à cocher -->
@@ -127,20 +119,19 @@ catch(Exception $e)
         <div class="col-xs-6 col-sm-6 col-md-6 col-xl-6">
           <input type="submit" class="btn btn-default" name="valider" />
         </div>
-
       </div>
     </form>
-  </body>
 
-  <div class="row text-center">
-    <ol class="breadcrumb piedpage">
-      <li class="breadcrumb-item"><a href="accueil.php">Retour page connexion</a></li>
-      <li class="breadcrumb-item"><a href="confidentialite.php">Condition d'utilisation</a></li>
-      <li class="breadcrumb-item"><a href="info_udev.php">Plus d'info</a></li>
-    </ol>
+    <div class="row text-center">
+      <ol class="breadcrumb piedpage">
+        <li class="breadcrumb-item"><a href="accueil.php">Retour page connexion</a></li>
+        <li class="breadcrumb-item"><a href="confidentialite.php">Condition d'utilisation</a></li>
+        <li class="breadcrumb-item"><a href="info_udev.php">Plus d'info</a></li>
+      </ol>
+    </div>
+
   </div>
-
-
+</body>
 <script>
 
   var liste;
@@ -175,23 +166,22 @@ catch(Exception $e)
         $('input[name=cookie]').after("<br><span>Vous devez accepter pour continuer</span>");
         return false;
       }
-        // a tester
-        if ($('.competences:checked').length<3) {
-          $('.h1formulaire').after("<br><span>Vous devez validez au moins trois choix</span>");
-          return false;
-        }
-        if ($('.interets:checked').length<3) {
-          $('.h1formulaire').after("<br><span>Vous devez validez au moins trois choix</span>");
-          return false;
-        }
-        if ($('input[name="mdp1"]').val().length<8 || $('input[name="mdp2"]').val().length<8) {
-          $('input[name="mdp2"]').after("<br><span>Mot de passe trop court</span>");
-          return false;
-        }
-        if (($('input[name="mdp1"]').val())!=($('input[name="mdp2"]').val())) {
-          $('input[name="mdp2"]').after("<br><span>Vos mots de passe ne correspondent pas</span>");
-          return false;
-        }
-      });
-    </script>
-    </html>
+      if ($('.competences:checked').length<3) {
+        $('.h1formulaire').after("<br><span>Vous devez validez au moins trois choix</span>");
+        return false;
+      }
+      if ($('.interets:checked').length<3) {
+        $('.h1formulaire').after("<br><span>Vous devez validez au moins trois choix</span>");
+        return false;
+      }
+      if ($('input[name="mdp1"]').val().length<8 || $('input[name="mdp2"]').val().length<8) {
+        $('input[name="mdp2"]').after("<br><span>Mot de passe trop court</span>");
+        return false;
+      }
+      if (($('input[name="mdp1"]').val())!=($('input[name="mdp2"]').val())) {
+        $('input[name="mdp2"]').after("<br><span>Vos mots de passe ne correspondent pas</span>");
+        return false;
+      }
+    });
+  </script>
+</html>
