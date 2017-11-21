@@ -8,6 +8,11 @@ span{
   color: red;
 }
 
+.piedpage {
+	margin-bottom: 0px !important;
+	background-color:rgba(249, 248, 211, 0.69);
+}
+
 /*css pour la page d'accueil*/
 .boxConnexion {
 	border-style : solid;
@@ -109,4 +114,18 @@ span{
 #cookie{
     margin-left: 4px;
     position: absolute;
+}
+
+/*css page plus d'info*/
+.tableau {
+	border-style : solid;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin: 30px;
+  padding: 10px;
+}
+
+.infocgi {
+	color:rgba(249, 248, 211, 0.69);
 }
