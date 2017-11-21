@@ -3,6 +3,10 @@ body {
     font-family: 'Raleway',Comic Sans MS;
 		}
 
+span{
+  color: red;
+}
+
 .boxConnexion {
 	border-style : solid;
 	background-color: rgba(255, 255, 255, 0.3);
@@ -11,6 +15,7 @@ body {
   margin: 30px;
   text-align: center;
   padding-top: 20px;
+  padding: 4px;
 }
 
 /*css pour la page d'accueil*/
@@ -43,4 +48,9 @@ body {
 
 .divrow {
   padding-left: 200px;
+}
+
+#cookie{
+    margin-left: 4px;
+    position: absolute;
 }

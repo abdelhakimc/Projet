@@ -40,12 +40,16 @@
       </div>
 <!-- deuxième box contenantla connexion de la personne -->
       <div class="col-xs-11 col-sm-3 col-md-3 col-xl-3 boxConnexion">
-          <p><label for="">Identifiant</label></p>
-          <p><input type="text" class="inputaccueil" placeholder="Identifiant" value=""></p>
-          <p><label for="">Mot de passe</label></p>
-          <p><input type="text" class="inputaccueil" placeholder="Mot de passe" value=""></p>
-          <button type="button" class="btn btn-default" name="button">Se connecter</button>
+        <form action="verif2.php" method="post">
+          <p><label for="addmail">Adresse mail</label></p>
+          <p><input type="text" class="inputaccueil" placeholder="Adresse Mail" id="addmail" name="adresse_mail"></p>
+          <p><label for="mdp">Mot de passe</label></p>
+          <p><input type="text" class="inputaccueil" placeholder="Mot de passe" id="mdp" name="mdp"></p>
+          <p><label for="cookie">Se souvenir de moi<input type="checkbox" id="cookie" name="persiste" value="0"/></label></p>
+          <?php if (isset($_GET['e'])) { if($_GET['e']==="true") {echo '<span>Erreur dans identification, recommencer</span>';}}  ?>
+          <input type="submit" class="btn btn-default" />
           <a href="inscription.php"><button type="button" class="btn btn-default" name="button">S'inscrire</button></a>
+        </form>
       </div>
     </div>
   </div>

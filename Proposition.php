@@ -51,7 +51,7 @@ function Resultat()
              // else {
              //    echo '<img src="profil_femme.jpg" alt="">';
              // }
-          //    echo '<h1>'.$donnees['Prenom'].' '.substr($donnees['Nom']).'</h1>';
+          //    echo '<h1>'.$donnees['Prenom'].' '.substr($donnees['Nom'],0,1).'</h1>';
           //    echo '<a href="https://outlook.office.com/owa/?realm=ipilyon.net" target="_blank"><p>'.$donnees['Adresse_mail'].'</p></a></div>'
 		}
 	}
