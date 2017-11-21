@@ -4,7 +4,9 @@ body {
     overflow-x: hidden;
 		}
 
-
+span{
+  color: red;
+}
 
 <<<<<<< HEAD
 
@@ -113,6 +115,11 @@ body {
 
 .h1formulaire{
   color: white;
+}
+
+#cookie{
+    margin-left: 4px;
+    position: absolute;
 }
 
 
