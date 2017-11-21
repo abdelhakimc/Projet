@@ -8,11 +8,7 @@ span{
   color: red;
 }
 
-<<<<<<< HEAD
-
-=======
 /*css pour la page d'accueil*/
->>>>>>> 5bcc7b539eb6e5560126aacdbb95a8f34632749f
 .boxConnexion {
 	border-style : solid;
 	background-color: rgba(255, 255, 255, 0.3);
@@ -33,12 +29,8 @@ span{
 	text-decoration: underline;
 }
 
-<<<<<<< HEAD
-.
 
 /*css pour la page d'accueil*/
-=======
->>>>>>> 5bcc7b539eb6e5560126aacdbb95a8f34632749f
 .imagecgi {
   border-radius: 20px;
 }
@@ -63,7 +55,6 @@ span{
 }
 .inputinscription {
   border-radius: 5px;
-<<<<<<< HEAD
   float: right;
   color: black;
   margin: 3px;
@@ -78,7 +69,6 @@ span{
   color:white;
   margin: 2px;
   width: 300px;
-=======
   margin-bottom: 10px;
 	width: 30%;
 }
@@ -86,7 +76,6 @@ span{
 .inscription {
   font-weight: bold;
 	text-align: right;
->>>>>>> 5bcc7b539eb6e5560126aacdbb95a8f34632749f
 }
 
 .divinscription {
@@ -121,7 +110,3 @@ span{
     margin-left: 4px;
     position: absolute;
 }
-
-
-
-
