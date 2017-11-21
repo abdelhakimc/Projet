@@ -1,24 +1,42 @@
 body {
 	background-color : rgb(133, 52, 52);
     font-family: 'Raleway',Comic Sans MS;
+    overflow-x: hidden;
 		}
 
-span{
-  color: red;
-}
 
+
+<<<<<<< HEAD
+
+=======
+/*css pour la page d'accueil*/
+>>>>>>> 5bcc7b539eb6e5560126aacdbb95a8f34632749f
 .boxConnexion {
 	border-style : solid;
 	background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
-  margin-bottom: 20px;
-  margin: 30px;
-  text-align: center;
-  padding-top: 20px;
-  padding: 4px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	margin: 30px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
+.boxImage {
+	margin-bottom: 20px;
+	margin: 30px;
+}
+
+.h1formulaire {
+	text-decoration: underline;
+}
+
+<<<<<<< HEAD
+.
+
 /*css pour la page d'accueil*/
+=======
+>>>>>>> 5bcc7b539eb6e5560126aacdbb95a8f34632749f
 .imagecgi {
   border-radius: 20px;
 }
@@ -33,24 +51,70 @@ span{
   }
 
 /*css pour la page d'inscription*/
+.boxFormulaire{
+	border-style : solid;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 20px;
+	margin: 20px;
+	text-align: center;
+
+}
 .inputinscription {
   border-radius: 5px;
-  margin-bottom: 10px;
+<<<<<<< HEAD
+  float: right;
+  color: black;
+  margin: 3px;
+}
+
+#campus, #genre, #civilite{
+    width: 165px;
+    height: 26px;
 }
 
 .inscription {
   color:white;
+  margin: 2px;
+  width: 300px;
+=======
+  margin-bottom: 10px;
+	width: 30%;
+}
+
+.inscription {
+  font-weight: bold;
+	text-align: right;
+>>>>>>> 5bcc7b539eb6e5560126aacdbb95a8f34632749f
 }
 
 .divinscription {
-  text-align: left;
+  text-align: center;
 }
 
-.divrow {
-  padding-left: 200px;
+
+.formulaire {
+	background-image: url('../reseauxsociaux.png');
+	opacity: 0.8;
+	margin-bottom: 20px;
+	margin: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 20px;
+	text-align: right;
 }
 
-#cookie{
-    margin-left: 4px;
-    position: absolute;
+.condition {
+	color: white;
 }
+
+#bas_inscription{
+  margin: 9px;
+}
+
+.h1formulaire{
+  color: white;
+}
+
+
+
+

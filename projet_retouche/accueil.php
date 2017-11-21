@@ -44,7 +44,7 @@
           <p><label for="addmail">Adresse mail</label></p>
           <p><input type="text" class="inputaccueil" placeholder="Adresse Mail" id="addmail" name="adresse_mail"></p>
           <p><label for="mdp">Mot de passe</label></p>
-          <p><input type="text" class="inputaccueil" placeholder="Mot de passe" id="mdp" name="mdp"></p>
+          <p><input type="password" class="inputaccueil" placeholder="Mot de passe" id="mdp" name="mdp"></p>
           <p><label for="cookie">Se souvenir de moi<input type="checkbox" id="cookie" name="persiste" value="0"/></label></p>
           <?php if (isset($_GET['e'])) { if($_GET['e']==="true") {echo '<span>Erreur dans identification, recommencer</span>';}}  ?>
           <input type="submit" class="btn btn-default" />
