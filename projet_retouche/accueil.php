@@ -1,3 +1,7 @@
+<?php if (isset($_COOKIE['adresse_mail'])) {
+  // header('Location: https://growup.top/Projet/page_connexion.php?e=true');
+  // exit();
+} ?>
 <!DOCTYPE html>
 
 <link rel="stylesheet" type="text/css" href="site.css" media="all" />
