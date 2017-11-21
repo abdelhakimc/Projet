@@ -134,8 +134,11 @@
       </div>
     </div>
 
-  <footer>
-
-  </footer>
+    <div class="row text-center">
+      <ol class="breadcrumb piedpage">
+        <li class="breadcrumb-item"><a href="accueil.php">Retour accueil</a></li>
+      </ol>
+    </div>
+    
 </body>
 </html>
