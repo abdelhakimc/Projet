@@ -23,6 +23,7 @@ catch(Exception $e)
   <title>Inscription</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="jquery-ui.min.css">
   <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
   <script src="jquery-ui.min.js" type="text/javascript"></script>
 </head>
@@ -59,7 +60,7 @@ catch(Exception $e)
             </select>
           </label><br>
           <!--  -->
-          <label class="inscription">Ville : <input class="inputinscription" type="text" name="ville" value="" autocomplete="off"></label><br>
+          <label class="inscription">Ville : <input class="inputinscription" type="text" name="ville" id="automate"></label><br>
           <label class="inscription">Age : <input class="inputinscription" type="number" name="age" value="age"></label><br>
           <label class="inscription">Genre : <select name="genre" id="genre" class="inputinscription"><option value="Homme">Homme</option><option value="Femme">Femme</option></select></label><br>
           <label class="inscription">Civilité : <select name="civilite" id="civilite" class="inputinscription"><option value="Célibataire">Célibataire</option><option value="En union">Autres</option></select></label><br>
@@ -78,9 +79,9 @@ catch(Exception $e)
             $compt+=1;
             echo '<div class="input-group divinscription">
             <span class="input-group-addon">
-            <input type="checkbox" name="c'.$compt.'" value="0">
+            <input type="checkbox" name="c'.$compt.'" value="0" id="c'.$compt.'" class="competences">
             </span>
-            <label class="form-control">'.htmlspecialchars($donnees['Libellé']).'</label>
+            <label class="form-control" for="c'.$compt.'">'.htmlspecialchars($donnees['Libellé']).'</label>
             </div>';
           }
           ?>
@@ -95,9 +96,9 @@ catch(Exception $e)
             $compt+=1;
             echo '<div class="input-group divinscription">
             <span class="input-group-addon">
-            <input type="checkbox" name="i'.$compt.'" value="0" >
+            <input type="checkbox" name="i'.$compt.'" value="0" id="i'.$compt.'" class="interets">
             </span>
-            <label class="form-control">'.htmlspecialchars($donnees['Libellé']).'</label>
+            <label class="form-control" for="i'.$compt.'">'.htmlspecialchars($donnees['Libellé']).'</label>
             </div>';
           }
           ?>
@@ -110,8 +111,8 @@ catch(Exception $e)
     </div>
   </div>
   <div class="row text-center">
-    <label class="inscription" id="mdp1">Mot de passe : <input class="inputinscription" type="password" name="" value="mdp1" ></label><br>
-    <label class="inscription" id="mdp2">Recopier : <input class="inputinscription" type="password" name="" value="mdp2" ></label>
+    <label class="inscription" id="mdp1">Mot de passe : <input class="inputinscription" type="password" name="mdp1" ></label><br>
+    <label class="inscription" id="mdp2">Confirmer : <input class="inputinscription" type="password" name="mdp2" ></label>
     <div>
 
       <div class="row text-center" id="bas_inscription">
@@ -136,6 +137,7 @@ catch(Exception $e)
 </body>
 
 <script>
+
   var liste;
   $.ajax({
     type : "GET",
@@ -173,12 +175,12 @@ catch(Exception $e)
           $('.h1formulaire').after("<br><span>Vous devez validez au moins trois choix</span>");
           return false;
         }
-        if ($('#mdp1').val().length<8 || $('#mdp2').val().length<8) {
-          $('#mdp2').after("<br><span>Mot de passe trop court</span>");
+        if ($('input[name="mdp1"]').val().length<8 || $('input[name="mdp2"]').val().length<8) {
+          $('input[name="mdp2"]').after("<br><span>Mot de passe trop court</span>");
           return false;
         }
-        if ($('#mdp1').val()!=$('#mdp2').val()) {
-          $('#mdp2').after("<br><span>Vos mots de passe ne correspondent pas</span>");
+        if ($('input[name="mdp1"]').val()!=$('input[name="mdp2"]').val()) {
+          $('input[name="mdp2"]').after("<br><span>Vos mots de passe ne correspondent pas</span>");
           return false;
         }
       });
