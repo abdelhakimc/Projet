@@ -29,8 +29,7 @@ span{
 	text-decoration: underline;
 }
 
-<<<<<<< HEAD
-.
+
 
 /*css pour la page d'accueil*/
 .imagecgi {
@@ -45,6 +44,10 @@ span{
 .connexion {
     margin-bottom: 10px;
   }
+
+ #addmail {
+ 	width: 200px;
+ }
 
 /*css pour la page d'inscription*/
 .boxFormulaire{
@@ -73,7 +76,6 @@ span{
   margin: 2px;
   width: 300px;
   margin-bottom: 10px;
-	width: 30%;
 }
 
 .inscription {

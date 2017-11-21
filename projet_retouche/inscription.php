@@ -61,7 +61,7 @@ catch(Exception $e)
           </label><br>
           <!--  -->
           <label class="inscription">Ville : <input class="inputinscription" type="text" name="ville" id="automate"></label><br>
-          <label class="inscription">Age : <input class="inputinscription" type="number" name="age" value="age"></label><br>
+          <label class="inscription">Age : <input class="inputinscription" type="number" name="age"></label><br>
           <label class="inscription">Genre : <select name="genre" id="genre" class="inputinscription"><option value="Homme">Homme</option><option value="Femme">Femme</option></select></label><br>
           <label class="inscription">Civilité : <select name="civilite" id="civilite" class="inputinscription"><option value="Célibataire">Célibataire</option><option value="En union">Autres</option></select></label><br>
         </div>
@@ -160,6 +160,10 @@ catch(Exception $e)
     }
   });
 
+  $('input[name="prenom"]').change(function() {
+    $('input[name="adresse_mail"]').val($('input[name="prenom"]').val()+"."+$('input[name="nom"]').val()+"\@ipilyon.net");
+  });
+
   $('form').submit(
     function(e) {
       if ($('input[name=cookie]').is(':not(:checked)')) {
@@ -179,7 +183,7 @@ catch(Exception $e)
           $('input[name="mdp2"]').after("<br><span>Mot de passe trop court</span>");
           return false;
         }
-        if ($('input[name="mdp1"]').val()!=$('input[name="mdp2"]').val()) {
+        if (($('input[name="mdp1"]').val())!=($('input[name="mdp2"]').val())) {
           $('input[name="mdp2"]').after("<br><span>Vos mots de passe ne correspondent pas</span>");
           return false;
         }
