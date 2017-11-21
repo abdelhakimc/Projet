@@ -55,8 +55,11 @@
   </div>
 </body>
 
-  <footer>
-
-  </footer>
+<div class="row text-center">
+  <ol class="breadcrumb piedpage">
+    <li class="breadcrumb-item"><a href="info_udev.php">Plus d'info</a></li>
+    <li class="breadcrumb-item"><a href="confidentialite.php">Condition d'utilisation</a></li>
+  </ol>
+</div>
 
 </html>
