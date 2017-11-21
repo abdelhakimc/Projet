@@ -32,13 +32,13 @@ catch(Exception $e)
   <div class="container">
     <form action="verif.php" method="post">
       <div class="row text-center formulaire">
-        
+
         <!-- Formulaire à remplir pour avoir quelques informations sur la personne -->
         <div class="col-xs-11 col-sm-11 col-md-11 col-xl-11">
           <label class="inscription">Nom : <input class="inputinscription" type="text" name="nom" value=""></label><br>
           <label class="inscription">Prenom : <input class="inputinscription" type="text" name="prenom" value=""></label><br>
           <label class="inscription">Mail : <input class="inputinscription" type="email" name="adresse_mail" value="" ></label><br>
-          <label class="inscription">Campus : 
+          <label class="inscription">Campus :
             <select name="campus" id="campus" class="inputinscription">
               <!--  -->
               <?php
@@ -53,7 +53,7 @@ catch(Exception $e)
                     $selected="selected";
                   }
                 }
-                echo '<option value="'.htmlspecialchars($donnees['Libellé']).'" '.$selected.'>'.htmlspecialchars($donnees['Libellé']).'</option>'; 
+                echo '<option value="'.htmlspecialchars($donnees['Libellé']).'" '.$selected.'>'.htmlspecialchars($donnees['Libellé']).'</option>';
               }
               ?>
             </select>
@@ -101,7 +101,7 @@ catch(Exception $e)
             </div>';
           }
           ?>
-          
+
         </div>
 
 
@@ -131,9 +131,14 @@ catch(Exception $e)
     </form>
   </body>
 
-  <footer>
-  </footer>
-</body>
+  <div class="row text-center">
+    <ol class="breadcrumb piedpage">
+      <li class="breadcrumb-item"><a href="accueil.php">Retour page connexion</a></li>
+      <li class="breadcrumb-item"><a href="confidentialite.php">Condition d'utilisation</a></li>
+      <li class="breadcrumb-item"><a href="info_udev.php">Plus d'info</a></li>
+    </ol>
+  </div>
+
 
 <script>
   var liste;
