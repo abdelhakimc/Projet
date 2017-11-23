@@ -17,6 +17,40 @@ span{
 	margin: 0;
 }
 
+/*css pour la page du forum*/
+
+.row{
+	border:solid 0px rgb(58, 0, 0);
+	margin-bottom : 10px;
+
+}
+
+.footer{
+	margin-bottom:0px;
+	
+}
+
+
+#a {
+	border : solid rgb(104, 4, 4) 1px;
+	box-shadow: 6px -4px rgb(117, 4, 4);
+	border-radius:20px;
+	padding:8px;
+	margin-top :70px;
+	margin-left : 145px;
+	margin-bottom :22px;
+	text-align:  center;
+
+}
+
+.btn-langage{
+	color:rgb(131, 1, 1);
+	border-radius : 10px;
+	width:90px;
+	height:40px;
+}
+
+
 /*css pour la page d'accueil*/
 .boxConnexion {
 	border-style : solid;
@@ -41,7 +75,7 @@ span{
 
 /*css pour la page d'accueil*/
 .imagecgi {
-  border-radius: 20px;
+  border-radius: 60px;
 }
 
 .inputaccueil {
@@ -141,6 +175,7 @@ span{
 
 .imginfo {
 	margin:10px;
+	border-radius:20px;
 }
 
 /*csspour la page principal*/
@@ -149,17 +184,42 @@ span{
 	background-color: rgba(255, 255, 255, 0.3);
 	border-radius: 20px;
 	margin-left:0px;
+	box-shadow: 1px 1px 1px 1px;
+}
+
+
+.container-fluid{
+	border: solid 0px rgb(139, 52, 52);
+	border-radius: 60px;
+	padding:10px;
+	
+}
+
+.rowh {
+	border: solid 0px rgb(139, 52, 52);
+	background: rgb(240, 240, 240);
+	height :130px;
+	border-radius: 20px;
+	padding:10px;
+	box-shadow: 2px 1px 1px 1px;
+}
+
+#tete  {
+	
+	border-radius:60px;
+	padding :10px;
 }
 
 .tabprofile {
 	border-style : solid;
 	border-radius: 20px;
 	margin:10px;
-	background-color:white;
+	background-color:rgb(228, 228, 228);
 }
 
 .logo {
 	max-width: 100px;
+	border-radius:20px;
 }
 
 .photo{
@@ -188,17 +248,27 @@ span{
 
 .boxProposition {
 	border-style : solid;
-	background-color: rgba(110, 255, 80, 0.45);
+	background-color: rgb(209, 209, 209);
 	border-radius: 20px;
-	margin-left:0px;
+	margin-left:30px;
+	box-shadow: 1px 1px 1px 1px;
 	text-align: center;
+	height :300px;
+	width :200px;
+}
+
+#photo {
+	height: 90px;
+	width:90px;
+	margin-top:30px;
 }
 
 .boxForum {
-	background-color: white;
+	background-color: rgb(197, 197, 197);
 	border-style: solid;
 	border-radius: 20px;
 	margin-top: 30px;
 	padding: 20px;
 	margin-left: 20px;
+	box-shadow: 1px 1px 1px 1px;
 }

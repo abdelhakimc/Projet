@@ -8,7 +8,7 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>Réseau U'DEV</title>
+    <title>Réseau U'CONNECT</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     </style>
@@ -17,13 +17,21 @@
 
   <body>
     <div class="container-fluid">
-      <div class="row hautpage">
+      <div class="rowh">
         <div class="col-xs-2 col-md-2 col-lx-2 col-sm-2 photo">
           <img src="icone.jpg" class="img-responsive logo" alt="">
         </div>
 
-        <div class="col-xs-10 col-md-9 col-lx-9 col-sm-9">
-          <h1 class="text-center">Réseau U'DEV !</h1>
+        <div id="tete" class="col-xs-10 col-md-9 col-lx-9 col-sm-9">
+          <h1 class="text-center" style="text-shadow: 0 1px 0 #8B0000,
+             0 2px 0 #e5e5e5,
+             -1px 3px 0 #C8C8C8,
+             -1px 4px 0 #C1C1C1,
+             -2px 5px 0 #B9B9B9,
+             -2px 6px 0 #B2B2B2,
+             -2px 7px 2px rgba(0,0,0, 0.6),
+             -2px 7px 8px rgba(0,0,0, 0.2),
+             -2px 7px 45px rgba(0,0,0, 0.4);">Réseau U'Connect !</h1>
         </div>
 
       </div>
@@ -100,31 +108,31 @@
 <!-- première proposition -->
             <div class="col-xs-4 col-md-4 col-lx-4 col-sm-4">
                 <div class="card boxProposition">
-                  <img src="damien.png" alt="John" class="logo">
+                  <img id="photo" src="damien.png" alt="John" class="logo">
                   <h3 class="infoperso">Daminaminou !</h3>
                   <p class="title">Autosuceur</p>
                   <p>Clermont-ferrand</p>
-                  <p><button>Contacter !</button></p>
+                  <p><button style="color:#8B0000;border-radius:20px;" >Contacter </button></p>
                 </div>
             </div>
 <!-- Deuxième proposition -->
             <div class="col-xs-4 col-md-4 col-lx-4 col-sm-4">
                 <div class="card boxProposition">
-                  <img src="damien.png" alt="John" class="logo">
+                  <img id="photo" src="damien.png" alt="John" class="logo">
                   <h3 class="infoperso">Daminaminou !</h3>
                   <p class="title">Autosuceur</p>
                   <p>Clermont-ferrand</p>
-                  <p><button>Contacter !</button></p>
+                  <p><button style="color:#8B0000;border-radius:20px;">Contacter </button></p>
                 </div>
             </div>
 <!-- Troisième proposition -->
             <div class="col-xs-4 col-md-4 col-lx-4 col-sm-4">
                 <div class="card boxProposition">
-                  <img src="damien.png" alt="John" class="logo">
+                  <img id="photo" src="damien.png" alt="John" class="logo">
                   <h3 class="infoperso">Daminaminou !</h3>
                   <p class="title">Autosuceur</p>
                   <p>Clermont-ferrand</p>
-                  <p><button>Contacter !</button></p>
+                  <p><button style="color:#8B0000; border-radius:20px;">Contacter </button></p>
                 </div>
             </div>
 
